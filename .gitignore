@@ -1,0 +1,8 @@
+**/target
+**/a.out
+**/__pycache__
+**/venv
+**/Cargo.lock
+**/out
+**/.ipynb_checkpoints
+.git_old

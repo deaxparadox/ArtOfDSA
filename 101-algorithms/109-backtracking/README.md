@@ -42,7 +42,7 @@ Problems associated with backtracking can be categorized into 3 categories:
 Backtracking algorithm explores each and every possible path in order to find a valid solution, this exploration of path can be easily understood via given images:
 
 
-![Backtracking 1](../assets/backtracking1.png)
+![Backtracking 1](../../assets/backtracking1.png)
 
 As shown in the image, *"IS"* represents the **Initial State** where the recursion call starts to find a valid solution.
 
@@ -103,7 +103,7 @@ These complexities are due to the fact that at each state we have multiple choic
 - Solving problems with multiple choices and exploring options systemically, backtracking when needed.
 - Managed explicitly with loops and state
 - Application of Backtracking: 
-    - N Queen problem
+    - [N Queen problem](101-n-queens.md)
     - Rat in a Maze problem
     - Knight’s Tour Problem
     - Sudoku solver

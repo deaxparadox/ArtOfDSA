@@ -12,18 +12,6 @@ pub enum SortError {
 
 fn main() -> ExitCode {
 
-    // let mut arr = vec![12, 123, 32, 12, 5, 2, 23];
-    // print!("Original vector: ");
-    // for i in 0..arr.len() {
-    //     print!("{}, ", arr[i]);
-    // }
-    // println!();
-    // let v0 = algorithms::sort::bubble::sort(&mut arr);
-    // print!("Sorted vector: ");
-    // for i in 0..v0.len() {
-    //     print!("{}, ", v0[i]);
-    // }
-    // println!();
 
     let matches = command!()
         .arg(
@@ -84,7 +72,7 @@ fn main() -> ExitCode {
 
     if let Some(bubble_sort) = matches.get_one::<bool>("bubble_sort") {
         if *bubble_sort {
-            match algorithms::sort::bubble::run() {
+            match algorithms::sort::bubble::run2() {
                 Ok(()) => {
                     println!("Successfull");
                     ExitCode::SUCCESS;

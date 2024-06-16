@@ -34,6 +34,30 @@ impl BubbleSort {
             }
         }
     }
+
     
+    pub fn bubble_sort(v0: &mut Vec<i32>) -> &mut Vec<i32> {
+        let mut n = v0.len();
+        let mut swapped = false;
+    
+        for i in 0..n {
+            swapped = false;
+    
+            for j in 0..n-i-1 {
+                if v0[j] > v0[j+1] {
+                    let _temp = v0[j];
+                    v0[j] = v0[j+1];
+                    v0[j+1] = _temp;
+                    swapped = true;
+                }
+            }
+    
+            if !swapped {
+                break;
+            }
+        }
+    
+        return v0;
+    }
         
 }

@@ -10,9 +10,9 @@ pub enum SortError {
     EmptyVector
 }
 
-fn main() -> ExitCode {
 
-
+fn wrapper_main() -> ExitCode{
+    
     let matches = command!()
         .arg(
             Arg::new("linear_serach")
@@ -72,7 +72,7 @@ fn main() -> ExitCode {
 
     if let Some(bubble_sort) = matches.get_one::<bool>("bubble_sort") {
         if *bubble_sort {
-            match algorithms::sort::bubble::run2() {
+            match algorithms::bubble_sort::run2() {
                 Ok(()) => {
                     println!("Successfull");
                     ExitCode::SUCCESS;
@@ -87,4 +87,12 @@ fn main() -> ExitCode {
 
     println!("Specify a DAS :)");
     ExitCode::SUCCESS
+}
+
+fn main() -> ExitCode {
+    // return wrapper_main();
+
+    algorithms::merge_operation::merge_operation_struct::run();
+    return ExitCode::SUCCESS;
+
 }

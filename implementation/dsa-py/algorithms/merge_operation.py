@@ -14,41 +14,41 @@ def sortArray(arr: list[int]) -> list[int]:
 
 
 def generateArray(size: int = 5) -> list:
-    newArray = [
+    return [
         random.randint(0, 100) for _ in range(5)
     ]
-    sort = sortArray(newArray)
-    return sort
+    
+    
 
 def mergeOperation(a, b):
     c = []
-    na, nb= 0, 0
+    mi, ni= 0, 0
     m, n = len(a), len(b)
     
-    while na < m and nb < n:
-        if a[na] < b[nb]:
-            c.append(a[na])
-            na+=1
+    while mi < m and ni < n:
+        if a[mi] < b[ni]:
+            c.append(a[mi])
+            mi+=1
         else:
-            c.append(b[nb])
-            nb+=1
+            c.append(b[ni])
+            ni+=1
 
-    while nb < n:
-        c.append(b[nb])
-        nb+=1
+    while ni < n:
+        c.append(b[ni])
+        ni+=1
   
-    while na < m:
-        c.append(a[na])
-        na+=1
+    while mi < m:
+        c.append(a[mi])
+        mi+=1
     return c
 
 def main():
-    a = generateArray()
-    b = generateArray()
-    print(a, b)
-    c = []
+    a = sortArray(generateArray())
+    b = sortArray(generateArray())
+    print("Array a:", a)
+    print("Array b:", b)
     sort = mergeOperation(a, b)
-    print(sort)
+    print("Merged sorted array:", sort)
     
 if __name__ == "__main__":
     main()

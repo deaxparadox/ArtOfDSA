@@ -1,10 +1,4 @@
-pub mod quick {
-    
-
-}
-
-pub mod bubble {
-    use crate::SortError;
+use crate::SortError;
     use std::vec;
 
     /// This function directly accept the `&mut Vec<i32>`
@@ -147,4 +141,3 @@ pub mod bubble {
 
         Ok(())
     }
-}

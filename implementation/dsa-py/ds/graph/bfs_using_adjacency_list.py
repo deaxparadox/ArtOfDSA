@@ -45,13 +45,17 @@ def main():
     addEdge(adjList, 1, 4)
     addEdge(adjList, 2, 4)
     
+    print(adjList)
+    
     
     # Mark all the vertices as not visited
     visited = [False] * vertices
     
+    print(visited)
+    
     # Perform BFS traversal starting from vertex 0
     print("Breadth First Traversal starting from vertex 0:", end=" ")
-    bfs(adjList, 0, visited)
+    bfs(adjList, 2, visited)
 
 if __name__ == "__main__":
     main()

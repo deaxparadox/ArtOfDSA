@@ -5,4 +5,8 @@ Graph Data Structure is a collection of nodes connected by edges. It's used to r
 
 - [What is graph Data Structure?](what-is-graph-ds.md)
 - [Basics of Graphs](basics-of-graph.md)
-- [BFS and DFS](bfs-and-dfs/README.md)
+- [Types of Graphs](types-of-graph.md)
+
+- BFS and DFS for graph
+    - [BFS (Breadth First Search)](bfs-and-dfs/bfs-for-graph.md)
+    - [What is DFS (Depth First Search)](bfs-and-dfs/dfs-for-graph.md)

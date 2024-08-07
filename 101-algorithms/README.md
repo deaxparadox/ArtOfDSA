@@ -33,3 +33,6 @@ There are several types of algorithms available. Some import algorithms are:
 9. **Dynamic Programming Algorithm**: This algorithm used the concept of usign the already found solution to avoid repetitive calculation of the same part of the problem. It divides the problem into smaller overlapping subproblems and solves them.
 
 10. **Ramdomized Algorithm**: In the randomized algorithm we use a random number so it gives immediate benefit. The random number helps in deciding the expected outcome.
+
+
+- [Depth First Search](dfs.md)

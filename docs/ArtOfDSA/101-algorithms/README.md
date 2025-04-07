@@ -36,3 +36,4 @@ There are several types of algorithms available. Some import algorithms are:
 
 
 - [Depth First Search](dfs.md)
+- [LRU Cache](lru-cache/README.md)

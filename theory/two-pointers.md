@@ -118,3 +118,105 @@ Here are the two popular variations of this approach:
 #### Why FLoyd's cycle detection works
 
 The stand speed choice is 1 step for the slow pointers and 2 steps for the fast pointer. If the linked has a cycle, the slow pointer eventually enters the cycle and starts looping around it. THe fast pointer is also looping around the cycle but move twice as fast.
+
+The relative speed of the fast pointer with respect to the slow pointer is 1 step per iteration: fast advances 2, slow advances 1, and the net difference is 1. Once both pointers are inside the cycle, the fast pointer gains exactly 1 step on slow every itration. Since the cycle has the finite length `L`, fast catches up to slow within at most `L` iterations.
+
+IF the list has no cycle, the fast pointer reaches the end of the list (`null`) first. THat is the termination condition of the no-cycle case.
+
+To find the starting node of the cycle after detection, reset on pointer to the head and advance both pointers at speed 1. They meet at the cycle's entry node. This is a standard interview follow-up to plain cycle detection.
+
+TIme: $O(n)$
+Space: $O(1)$
+
+The general same-direction template (read/write partition) also runs in:
+
+TIme: $O(n)$ and 
+Space: $O(1)$, 
+
+since each pont4er advances at most n times across the array.
+
+### 3. Fixed-Offset Pointers (Same Direction)
+
+This is a specific same-direction pattern, not a seprate variant. Both pointers move in the same direction, but on is advanced first to create a fixed gap between them before they more together.
+
+In this approach, we move the first pointer independently until it finds an element that meets a certain conditions. After this, we start traversing with the second pointer to find additional information related to what the first pointer found.
+
+The pattern applies when we need to process elements in stages or maintain a fixed distance between two pointers.
+
+#### Template
+
+
+```py
+def trigger_based_template(nums: list[int]) -> None:
+    first = 0
+    second = 0
+    triggered = False
+
+    while first < len(nums):
+        # 1) TRIGGER PHASE: advance first until a condition becomes true
+        if not triggered:
+            if meets_condition(nums[first]):
+                triggered = True
+                second = 0  # or some_start_index, depending on the problem
+            first += 1
+            continue
+
+        # 2) COUPLED PHASE: now advance second (or both) to extract info
+        while second < first:
+            process_pair(nums, second, first - 1)
+            second += 1
+
+        # optional: reset trigger if the stage ends
+        triggered = False
+```
+
+A good example of this approach is finding the Nth node from the end of a linked list.
+- Initailize both pointers (`fast` and `slow`) at the head.
+- Advance the `fast` pointer `n` steps.
+- Then move both pointers one step at a time until the `fast` pointer reaches the end.
+- The `slow` pointer is now at the Nth node from the end.
+
+Time: $O(n)$
+Space: $O(1)$
+
+### When to use two pointers pattern?
+
+A **Two-Pointer algorithm** is generally applied to **liear data structures**, such as: array, strings or linked lists.
+
+Two pointers fits patterns where the input data follows a predictable pattern, such as a sorted array or pallindrome string. Common patterns include:
+
+**1. Sorted array with pair/triplet finding**
+
+If the array is sorted (or can be stored) and you need to find elements that satisfy some relationship, tow pointers can often replace nested loops.
+
+**2. In-place array modification**
+
+When you need to modify an array without using extra space, the read-write pointer pattern works well.
+
+**3. Palindrome or symmetry checking**
+
+Comparing elements from both ends leads to two pointers converging.
+
+**4; Merging or comparing sorted sequences**
+
+When working with two sorted arrays, using a pointer for each is the natural approach.
+
+**5. Subarray problems with monotonic conditions**
+
+If expanding a window changes a conditions in a predictable direction, two pointers can work. This overlaps with sliding window, which is two pointers with specific sementics.
+
+| Problem Type | Variant | Example |
+|-|-|-|
+| Find prai with target sum | Opposite direction | Two Sum II (sorted array) |
+| Check palindrome | Opposite direction | Valid Palindrome |
+| Remove duplicates | Same direction  | Remove Duplicates from Sorted Array | 
+| Partition array | Same direction  | Move Zeroes, Sorted Colors |
+| Merge sorted arrays | Two arrays | Merge Sorted Array |
+| Maximim area | Opposite direction | Container With Most Water |
+
+
+### When Not to use two pointers:
+- Array is not sorted and sorting would change the answer (e.g., need original indices).
+- No monotonic relationshpi between pointer positions and the condition.
+- You need to find all pairs, not just check existence (may still need $O(n^2)$)
+- THe problem requires looking at non-contiguous elements in arbitrary combinations.

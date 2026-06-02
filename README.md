@@ -9,3 +9,7 @@
 
 
 ### Graphs Data Structure
+
+
+### Techniques
+- [Two pointers](theory/two-pointers.md)

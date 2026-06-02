@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27689a16-8eb3-4f83-a78a-121946c709f7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../101-algorithms/102-binary-serach.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../101-algorithms/102-binary-serach.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dsa-py/algorithms/merge_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../dsa-py/algorithms/merge_operation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dsa-rs/src/algorithms/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../dsa-rs/src/algorithms/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dsa-rs/src/algorithms/sort.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dsa-rs/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../dsa-rs/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2hlfg9HC3YVZ9UWNb1xu4c6m4wq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BinarySearch.executor": "Run",
+    "Application.Bubble.executor": "Run",
+    "Application.Fibonacci.executor": "Run",
+    "Application.MergeOperation.executor": "Run",
+    "Application.Stack.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27689a16-8eb3-4f83-a78a-121946c709f7" name="Changes" comment="" />
+      <created>1718173698978</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718173698978</updated>
+    </task>
+    <servers />
+  </component>
+</project>

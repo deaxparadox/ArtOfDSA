@@ -220,3 +220,18 @@ If expanding a window changes a conditions in a predictable direction, two point
 - No monotonic relationshpi between pointer positions and the condition.
 - You need to find all pairs, not just check existence (may still need $O(n^2)$)
 - THe problem requires looking at non-contiguous elements in arbitrary combinations.
+
+### Types of problems:
+
+- [Sum of Pair Equal to Target](/implementation/dsa-py/sum-of-pair-equal-to-target.py) 
+- Two Sum in sorted array
+- Closet Two Sum
+- Three Sum
+- Four Sum
+- Trapping Rain Watter
+
+### Problems: 
+
+- Valid Palindrome ([Leetcode](https://leetcode.com/problems/valid-palindrome/description/?envType=problem-list-v2&envId=two-pointers) | [>>>](/implementation/dsa-py/125-valid-palindrome.py))
+- Valid Palindrome II ([Leetcode](https://) | [>>>](/implementation/dsa-py/680-valid-palindrome-II.py))
+- Longest Palindromic Substring

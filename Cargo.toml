@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "leetcode/rust",
+]
+resolver = "3"

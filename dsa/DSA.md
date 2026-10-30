@@ -434,11 +434,12 @@
 
 **Ch 44. Bit Manipulation**
 
-- 44.1 Bitwise operators, shifts, masks
-- 44.2 Set/clear/toggle/check bit; counting set bits; power-of-two checks
-- 44.3 XOR tricks, single-number problems
-- 44.4 Subset enumeration with bitmasks, Gray code
-- 44.5 Bit-parallel algorithms
+- [>>>](./44-bit-manipulation.md)
+- [44.1 Bitwise operators, shifts, masks](./44-bit-manipulation.md#441-bitwise-operators-shifts-masks)
+- [44.2 Set/clear/toggle/check bit; counting set bits; power-of-two checks](./44-bit-manipulation.md#442-set-clear-toggle-check-counting-set-bits-power-of-two-checks)
+- [44.3 XOR tricks, single-number problems](./44-bit-manipulation.md#443-xor-tricks-and-single-number-problems)
+- [44.4 Subset enumeration with bitmasks, Gray code](./44-bit-manipulation.md#444-subset-enumeration-with-bitmasks-and-gray-code)
+- [44.5 Bit-parallel algorithms](./44-bit-manipulation.md#445-bit-parallel-algorithms)
 
 ---
 
